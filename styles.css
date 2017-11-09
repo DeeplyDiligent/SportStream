@@ -1,0 +1,203 @@
+.jumbotron {
+    border-radius: 0px;
+    overflow:auto
+}
+
+.navbar {
+    position: relative;
+    margin-bottom: 0;
+    border-radius: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.navbar {
+    background-color: #002060;
+    z-index: 500
+}
+
+.deeply-diligent-logo {
+    height: inherit;
+    padding: 10px;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.vscrolling_container { 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.jumbotron.quote {
+    box-shadow: 0 5px 15px 0px gray;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    color: white;
+/*    text-shadow: 4px 4px 4px #000000;*/
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('http://www.dessosports.com/sites/all/themes/desso_theme/images/background.jpg') center 30% no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;     
+}
+
+.container {
+    padding: 5% 5%;
+}
+
+.jumbotron.profile {
+    box-shadow: 0 0px 0px 0px gray;
+}
+
+.summary.container-fluid {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-text {
+    font-family: 'Flamenco';
+    font-size: 20px!important;
+}
+
+.face-image {
+    width: 60px;
+    margin-right: 5%;
+    margin-bottom: 0px;
+    margin-top: auto;
+}
+
+.jumbotron.projects {
+    box-shadow: 0 0px 10px 0px gray;
+    background-color: cadetblue;
+    margin-bottom: 15px;
+}
+
+.projects-showcase {
+    max-width: 1000px;
+    overflow: auto;
+    margin: auto;
+}
+
+.projects.w3-container {
+    background-color: white;
+    padding-top: 10px;
+    font-family: 'Flamenco';
+}
+
+.projects-card.w3-container {
+    margin: 5px;
+    padding: 5px;
+}
+
+.recent-headings-title {
+    display: inline-block;
+    color: white!important;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.social-network-icons {
+    font-size: 18px;
+}
+
+.social-network-icons>li {
+    display: inline-block!important;
+}
+
+.jumbotron.work-experience {
+    box-shadow: 0 0px 0px 0px gray;
+}
+
+.work-experience-showcase {
+    max-width: 1000px;
+    overflow: auto;
+    margin: auto;
+}
+
+.work-exp-img-crop {
+    padding: 5px;
+    width: 100px
+}
+
+.work-exp-pics-pos {
+    padding-left: 7.5px !important;
+    padding-top: 5px!important;
+    padding-bottom: 15px!important;
+    padding-right: 30px!important;
+}
+
+.media-body>p {
+    padding-top: 5px;
+    font-family: "Flamenco";
+    word-wrap: break-word;
+}
+
+.jumbotron.contact {
+    margin-bottom: 0px;
+    box-shadow: 0 0px 10px 0px gray;
+    background-color: #f2f2f2;
+}
+
+.contact-showcase {
+    max-width: 1000px!important;
+    overflow: auto;
+    margin: auto;
+}
+
+.contact-showcase>p {
+    font-family: Flamenco;
+}
+
+.form-control {
+    padding: 0px;
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse,
+    .navbar-toggle {
+        display: block !important;
+    }
+    .navbar-header {
+        float: none;
+    }
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -48px;
+    visibility: hidden;
+}
+
+
+.valignsignin {
+    display: table-cell;
+    vertical-align: middle;
+    width:50% !important;
+}
+
+.vscrollingcontainer {
+    display: table;
+    width:100%;
+}
