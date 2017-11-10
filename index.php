@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Deep Bhattacharyya - DeeplyDiligent</title>
+    <title>SportStream</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -33,7 +33,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="./index.php">
                     <img src="header.png" class="deeply-diligent-logo" alt="DeeplyDiligent">
                 </a>
             </div>
@@ -56,40 +56,44 @@
     </nav>
     <div class="main">
         <a class="anchor" id="top"></a>
-        <div class="jumbotron quote vscrollingcontainer" id="quote">
-            <div class="w3-container fadeInLeft animated slideInLeft valignsignin" data-wow-delay="0.3s">
-                <div class="w3-card-4 w3-white">
+        <div class="jumbotron quote textaligncenter vscrollingcontainer" id="quote">
+            <script>fitimage();</script>
+            <div class="w3-container animated fadeInLeft valignsignin">
+                <div class="w3-card-4 w3-white" style="max-width:500px;margin-left:auto;margin-right:auto">
                     <header class="w3-container w3-light-grey">
-                        <h3 class="card-title fadeInLeft">Deep Bhattacharyya</h3>
+                        <h3 class="card-title fadeInLeft">Sign In to SportStream</h3>
                     </header>
                     <div class="w3-container">
                         <div class="summary container-fluid">
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <img src="./images/face.jpg" alt="Deep Bhattacharyya" class="w3-circle face-image w3-left">
+                            <form action="./verify.php">
+                                <div class="md-form">
+                                    <input type="text" id="defaultForm-email" class="form-control">
+                                    <label for="defaultForm-email">Email</label>
+                                </div>  
+
+                                <div class="md-form">
+                                    <input type="password" id="defaultForm-pass" class="form-control">
+                                    <label style="display:block" for="defaultForm-pass">Password</label>
                                 </div>
-                                <div class="col-sm-10">
-                                    <p class="profile-text">Student at Monash University.<br><span class="address"><span class="glyphicon glyphicon-map-marker"></span>&nbsp; Clayton, VIC 3800&nbsp;Australia</span>
-                                    </p>
+
+                                <div class="text-center">
+                                    <button class="btn btn-default" type="submit">Login</button>
                                 </div>
-                                <p class="profile-text">Currently Studying:<br>Commerce Specialist (Finance) <br>+ IT (Business Information Systems)</p>
-                                <p class="profile-text">Working knowledge of:<br>Python, Java, Javascript, HTML, CSS, node.JS, React Native, Bootstrap, PHP and VBA.</p>
-                                <p class="profile-text">Year 12 Graduate from John Monash Science School:<br>Atar of 98.3 out of 99.95</p>
-                            </div>
+                            </form>
                         </div>
                     </div>
                     <a href="https://www.linkedin.com/in/deep-bhattacharyya-56494bb5/">
-                        <button class="w3-button w3-block w3-dark-grey" href="https://www.linkedin.com/in/deep-bhattacharyya-56494bb5/">Connect With Me On &nbsp;<i class="fa fa-linkedin-square"></i>&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></button>
+                        <button class="w3-button w3-block w3-dark-grey" href="">Create an Account&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></button>
                     </a>
                 </div>
             </div>
         </div>
         <a class="anchor" id="profile"></a>
         <div class="jumbotron profile">
-            <div class="w3-container fadeInLeft animated slideInLeft" data-wow-delay="0.3s">
+            <div class="w3-container animated slideInLeft" data-wow-delay="0.3s">
                 <div class="w3-card-4" style="margin:auto;max-width:500px">
                     <header class="w3-container w3-light-grey">
-                        <h3 class="card-title fadeInLeft">Deep Bhattacharyya</h3>
+                        <h3 class="card-title wow fadeInLeft">Deep Bhattacharyya</h3>
                     </header>
                     <div class="w3-container">
                         <div class="summary container-fluid">
@@ -118,7 +122,7 @@
             <div class="projects-showcase">
                 <h1 class="recent-headings-title">Recent Projects</h1>
                 <br><br>
-                <div class="container-fluid" style="padding:0px">
+                <div class="container-fluid wow fadeInLeft" style="padding:0px">
                     <div class="row" style="margin:0px">
                         <div class="col-sm-6" style="padding:0px;">
                             <div class="projects-card w3-container">
