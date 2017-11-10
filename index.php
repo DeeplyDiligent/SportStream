@@ -34,21 +34,14 @@
 					<span class="icon-bar"></span>
 					</button>
                 <a class="navbar-brand" href="./index.php">
-                    <img src="header.png" class="deeply-diligent-logo" alt="DeeplyDiligent">
+                    <img src="header.png" class="sportstream-logo" alt="SportStream">
                 </a>
             </div>
             <div class="collapse navbar-collapse nav-collapse" id="myNavbar" data-toggle="collapse" data-target=".nav-collapse.in">
                 <ul class="nav navbar-nav">
                     <li><a href="#top">Home</a></li>
-                    <li><a href="#profile">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#work-experience">Work Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right social-network-icons">
-                    <li><a href="https://www.linkedin.com/in/deep-bhattacharyya-56494bb5/"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
-                    <li><a href="https://www.facebook.com/deeplydiligent"><i class="fa fa-facebook-square fa-lg"></i></a></li>
-                    <li><a href="https://twitter.com/deeplydiligent"><i class="fa fa-twitter-square fa-lg"></i></a></li>
                     <li><a href="https://github.com/DeeplyDiligent"><i class="fa fa-github-square fa-lg"></i></a></li>
                 </ul>
             </div>
@@ -65,14 +58,14 @@
                     </header>
                     <div class="w3-container">
                         <div class="summary container-fluid">
-                            <form action="./verify.php">
+                            <form action="./verify.php" method="post">
                                 <div class="md-form">
-                                    <input type="text" id="defaultForm-email" class="form-control">
+                                    <input name="email" type="text" id="defaultForm-email" class="form-control">
                                     <label for="defaultForm-email">Email</label>
                                 </div>  
 
                                 <div class="md-form">
-                                    <input type="password" id="defaultForm-pass" class="form-control">
+                                    <input name="password" type="password" id="defaultForm-pass" class="form-control">
                                     <label style="display:block" for="defaultForm-pass">Password</label>
                                 </div>
 
