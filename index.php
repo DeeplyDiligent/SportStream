@@ -17,7 +17,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="animate.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -49,7 +49,7 @@
     </nav>
     <div class="main">
         <a class="anchor" id="top"></a>
-        <div class="jumbotron quote textaligncenter vscrollingcontainer" id="quote">
+        <div class="jumbotron quote textaligncenter vscrollingcontainer animated fadeIn" id="quote">
             <script>fitimage();</script>
             <div class="w3-container animated fadeInLeft valignsignin">
                 <div class="w3-card-4 w3-white" style="max-width:500px;margin-left:auto;margin-right:auto">
@@ -112,10 +112,10 @@
         </div>
         <a class="anchor" id="projects"></a>
         <div class="jumbotron projects">
-            <div class="projects-showcase">
+            <div class="projects-showcase wow fadeInLeft">
                 <h1 class="recent-headings-title">Recent Projects</h1>
                 <br><br>
-                <div class="container-fluid wow fadeInLeft" style="padding:0px">
+                <div class="container-fluid" style="padding:0px">
                     <div class="row" style="margin:0px">
                         <div class="col-sm-6" style="padding:0px;">
                             <div class="projects-card w3-container">

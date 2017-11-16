@@ -23,7 +23,8 @@ footer {
 
 .navbar {
     background-color: #001a09;
-    z-index: 500;
+    z-index: -1;
+    height: 50%;
 }
 
 .sportstream-logo {
@@ -214,10 +215,10 @@ a.anchor {
 
 
 .md-form>input {
-    font-size: 16px !important;
+    font-size: 16px;
 }
 
 .md-form>label {
     font-weight:300;
-    font-size: 16px ;
+    font-size: 16px;
 }
