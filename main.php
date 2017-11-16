@@ -41,7 +41,7 @@
                     <li><a href="#top">Home</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right social-network-icons">
-                    <li><a href="https://github.com/DeeplyDiligent"><i class="fa fa-github-square fa-lg"></i></a></li>
+                    <li><a href="https://github.com/DeeplyDiligent/sportstream"><i class="fa fa-github-square fa-lg"></i></a></li>
                 </ul>
             </div>
         </div>
