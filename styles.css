@@ -137,6 +137,9 @@ footer {
     font-family: "Flamenco";
     word-wrap: break-word;
 }
+.about-us .black-text, .about-us .mb-0{
+    font-weight: 300 !important;
+}
 
 .jumbotron.contact {
     margin-bottom: 0px;
@@ -215,16 +218,42 @@ a.anchor {
 
 .jumbotron.about-us {
     box-shadow: 0 0px 0px 0px gray;
-
+    overflow: hidden;
 }
 
 .about-us-showcase {
     max-width: 1000px;
-    overflow: auto;
+    overflow: hidden;
     margin: auto;
 }
 
 h1 {
     text-align:center;
     width:100%
+}
+
+.card-body {
+    padding:20px;
+}
+
+.card-text {
+    font-size:1.5rem!important;
+}
+
+.col-md-4 {
+    max-width: 400px;
+    margin:auto;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.about-us-showcase .col-md-6 {
+    margin: auto;
+}
+
+
+
+
+
+.card-footer {
+    padding:10px;
 }

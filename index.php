@@ -75,35 +75,62 @@
                             </form>
                         </div>
                     </div>
-                    <a href="https://www.linkedin.com/in/deep-bhattacharyya-56494bb5/">
-                        <button class="w3-button w3-block w3-dark-grey" href="">Create an Account&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></button>
+                    <a href="./create-account.php">
+                        <button class="w3-button w3-block w3-dark-grey">Create an Account&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></button>
                     </a>
                 </div>
             </div>
         </div>
         <div class="jumbotron about-us">
             <div class="about-us-showcase">
-                <h1 style="display:inline-block">About SportStream</h1><br><br><br><br>
-                
+                <h1 class="wow fadeInDown" data-wow-delay="0.6s" style="display:inline-block">About SportStream</h1><br>
+                <a class="anchor" id="top"></a>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 wow fadeInLeft" data-wow-delay="0.6s">
+                            <div class="card">
+                                <div class="view overlay hm-white-slight">
+                                    <img src="./images/victor-oladipo-africa.jpg" class="img-fluid" alt="">
+                                    <a href="#">
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+
+                            </div>  
+                        </div>
+                        <div class="col-sm-6 wow fadeInRight" data-wow-delay="0.6s">
+                            <div class="card text-center z-depth-2">
+                                <div class="card-body">
+                                    <p class="black-text mb-0">Sportstream allows you to watch all your favourite sporting events online, live! Stream or replay AFL, World Cup or Wimbeldon matches straight to your laptop or smartphone.</p>
+                                </div>
+                                <a href="./create-account.php">
+                                    <div class="card-footer text-muted success-color white-text">
+                                        <p class="mb-0">Sign up now &nbsp;<span class="glyphicon glyphicon-chevron-right"></span></p>
+                                    </div>
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <a class="anchor" id="contact"></a>
-        <div class="jumbotron contact">
-            <div class="contact-showcase">
-                <h1 style="display:inline-block">Contact</h1>
-                <br><br>
-                <p style="font-family: 'Courier New', Courier, monospace; word-wrap: break-word;">if (programmer.cannotBeReachedBy(smokeSignals)){<br>&emsp;pleaseFillForm();<br>}</p><br>
-                <p>Thanks for taking the time to visit my website. If you have any questions or comments, feel free to fill out the form below or contact me directly at:</p>
-                <p style="word-wrap: break-word; margin-left:20px">
-                    Email: &ensp;<a href="mailto:bhattacharyya.deep@gmail.com">bhattacharyya.deep@gmail.com</a><br>Mobile:&ensp;+61&nbsp;0434&nbsp;1000&nbsp;56
-                </p>
-                <a href="https://goo.gl/forms/h7YuDAgAAJsCkMzR2" class="btn btn-success btn-send" target="_blank" style="margin-bottom:10px;margin-top:10px">Fill form&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-        <footer>
-            <p class="text-center" style="font-family: 'Flamenco'; font-size:20px"> &copy; Deep Bhattacharyya 2017</p>
-        </footer>
     </div>
+    <a class="anchor" id="contact"></a>
+    <div class="jumbotron contact wow fadeInUp" data-wow-delay="1s">
+        <div class="contact-showcase">
+            <h1 style="display:inline-block">Contact</h1>
+            <br><br>
+            <p style="font-family: 'Courier New', Courier, monospace; word-wrap: break-word;">if (programmer.cannotBeReachedBy(smokeSignals)){<br>&emsp;pleaseFillForm();<br>}</p><br>
+            <p>Thanks for taking the time to visit my website. If you have any questions or comments, feel free to fill out the form below or contact me directly at:</p>
+            <p style="word-wrap: break-word; margin-left:20px">
+                Email: &ensp;<a href="mailto:bhattacharyya.deep@gmail.com">bhattacharyya.deep@gmail.com</a><br>Mobile:&ensp;+61&nbsp;0434&nbsp;1000&nbsp;56
+            </p>
+            <a href="https://goo.gl/forms/h7YuDAgAAJsCkMzR2" class="btn btn-success btn-send" target="_blank" style="margin-bottom:10px;margin-top:10px">Fill form&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+    </div>
+    <footer>
+        <p class="text-center" style="font-family: 'Flamenco'; font-size:20px"> &copy; Deep Bhattacharyya 2017</p>
+    </footer>
     <script>new WOW().init();</script>
 </body>
 
