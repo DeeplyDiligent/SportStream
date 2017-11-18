@@ -14,7 +14,6 @@
 
 .main {
     margin-top: 50px;
-    height: 2000px;
 }
 
 footer {
@@ -44,7 +43,7 @@ footer {
 
 .jumbotron.quote {
     box-shadow: 0 5px 15px 0px gray;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-family: 'Roboto';
     color: white;
 /*    text-shadow: 4px 4px 4px #000000;*/
@@ -120,15 +119,6 @@ footer {
     display: inline-block!important;
 }
 
-.jumbotron.work-experience {
-    box-shadow: 0 0px 0px 0px gray;
-}
-
-.work-experience-showcase {
-    max-width: 1000px;
-    overflow: auto;
-    margin: auto;
-}
 
 .work-exp-img-crop {
     padding: 5px;
@@ -221,4 +211,20 @@ a.anchor {
 .md-form>label {
     font-weight:300;
     font-size: 16px ;
+}
+
+.jumbotron.about-us {
+    box-shadow: 0 0px 0px 0px gray;
+
+}
+
+.about-us-showcase {
+    max-width: 1000px;
+    overflow: auto;
+    margin: auto;
+}
+
+h1 {
+    text-align:center;
+    width:100%
 }

@@ -1,19 +1,29 @@
+html, body
+{
+    height: 100%;
+}
+
+
 .jumbotron {
     border-radius: 0px;
     overflow:auto;
 }
 
 .navbar {
-    position: relative;
+    position: fixed;
     margin-bottom: 0;
     border-radius: 0;
-    position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .main {
-    margin-top: 50px;
+    top: 50%;
+    z-index: 2;
+    background-color:white; 
+    position:absolute;
+    width:100%;
 }
 
 footer {
@@ -23,7 +33,7 @@ footer {
 
 .navbar {
     background-color: #001a09;
-    z-index: -1;
+    display: table;
     height: 50%;
 }
 
@@ -64,11 +74,13 @@ footer {
 .summary.container-fluid {
     margin-top: 20px;
     margin-bottom: 20px;
+    display:table-row;
 }
 
 .card-title {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 25px;
 }
 
 .profile-text {
@@ -85,7 +97,7 @@ footer {
 
 .jumbotron.projects {
     box-shadow: 0 0px 10px 0px gray;
-    background-color: cadetblue;
+    background-color: white;
     margin-bottom: 15px;
 }
 
@@ -120,15 +132,9 @@ footer {
     display: inline-block!important;
 }
 
-.jumbotron.work-experience {
-    box-shadow: 0 0px 0px 0px gray;
-}
 
-.work-experience-showcase {
-    max-width: 1000px;
-    overflow: auto;
-    margin: auto;
-}
+
+
 
 .work-exp-img-crop {
     padding: 5px;
@@ -214,11 +220,89 @@ a.anchor {
 
 
 
-.md-form>input {
-    font-size: 16px;
+.desktop-search.md-form>input {
+    font-size: 40px;
+    margin-left:5rem!important;
+    margin-right:50px!important;
+    color: lightgrey;
 }
 
-.md-form>label {
+.desktop-search.md-form>label {
     font-weight:300;
-    font-size: 16px;
+    font-size: 40px;
+    margin-left:5rem!important;
 }
+.desktop-search.md-form>label.active {
+    font-size: 30px;
+    transform: translateY(-100%);
+}
+
+.search-box {
+    background-color: inherit;
+    display: table-row;
+    margin:auto;
+    position: relative;
+    vertical-align: middle;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.desktop-search.md-form {
+    max-width: 500px;
+    position:relative;
+    margin:auto;
+}
+
+.search-box>.desktop-search.md-form>i {
+    font-size: 40px;
+    margin-top:1rem;
+}
+
+/*
+.desktop-search{
+    display: none;
+}
+*/
+
+@media (max-width : 600px) {
+    .visibledevice {display:block;}
+    .visibledesktop {display:none;}
+    .search-box>.desktop-search.md-form>i {
+        font-size: 26px;
+        margin-top:1rem;
+    }
+    .desktop-search.md-form {
+        width:200px;
+    }
+    .desktop-search.md-form>input {
+        font-size: 26px !important;
+        margin-left:3.5rem!important;
+        width:200px;
+    }
+
+    .desktop-search.md-form>label {
+        font-weight:300;
+        font-size: 26px ;
+        margin-left:3.5rem!important;
+    }
+    .desktop-search.md-form>label.active {
+        font-size: 26px;
+        transform: translateY(-100%);
+    }
+}
+
+.card-body {
+    padding:20px;
+}
+
+.card-text {
+    font-size:1.5rem!important;
+}
+
+.col-md-4 {
+    max-width: 400px;
+    margin:auto;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
