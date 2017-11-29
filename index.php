@@ -17,6 +17,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="animate.js"></script>
+    <script src="search.js"></script>
 <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet'>
@@ -87,7 +88,7 @@
                 <a class="anchor" id="top"></a>
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6 wow fadeInLeft" data-wow-delay="0.6s">
+                        <div class="col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
                             <div class="card">
                                 <div class="view overlay hm-white-slight">
                                     <img src="./images/victor-oladipo-africa.jpg" class="img-fluid" alt="">
@@ -98,7 +99,7 @@
 
                             </div>  
                         </div>
-                        <div class="col-sm-6 wow fadeInRight" data-wow-delay="0.6s">
+                        <div class="col-sm-6 wow fadeInRight" data-wow-delay="0.3s">
                             <div class="card text-center z-depth-2">
                                 <div class="card-body">
                                     <p class="black-text mb-0">Sportstream allows you to watch all your favourite sporting events online, live! Stream or replay AFL, World Cup or Wimbeldon matches straight to your laptop or smartphone.</p>
@@ -116,7 +117,7 @@
         </div>
     </div>
     <a class="anchor" id="contact"></a>
-    <div class="jumbotron contact wow fadeInUp" data-wow-delay="1s">
+    <div class="jumbotron contact wow fadeInUp" data-wow-delay="0.4s">
         <div class="contact-showcase">
             <h1 style="display:inline-block">Contact</h1>
             <br><br>

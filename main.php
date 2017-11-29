@@ -1,4 +1,5 @@
 <!--To align elements horizontally:margin=auto LOL !!-->
+<!--DONT FORGET TO REDIRECT BACK TO HOMEPAGE IF NO PASSWORD FOUND !!-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,6 +22,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="stylesmain.css">
+    <script src="./js/main.js"></script>
+    <script src="./js/search.js"></script>
 </head>
 
 <body>
@@ -58,6 +61,11 @@
     </nav>
     <div class="main">
         <a class="anchor" id="top"></a>
+        <div class="container search-results">
+            <h1 style="display:inline-block; padding-left:15px" id="search-result-heading">Search Results</h1><br><br>
+            <div id="search-results-cards">
+            </div>
+        </div>
         <div class="container">
             <h1 style="display:inline-block">Recommended For You</h1><br><br>
             <div class="row">
