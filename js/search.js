@@ -15,7 +15,11 @@ $(document).ready(function(){
                 $(".search-results").slideDown();
             });
             
-            typingTimer = setTimeout(function(){search($('#form2').val())}, doneTypingInterval);
+            typingTimer = setTimeout(function(){
+                $.get('card.html', function(data) {
+                   search($('#form2').val(),data)
+                }, 'text');
+            }, doneTypingInterval);
         }else{
             $(".search-results").slideUp();
         }
@@ -25,7 +29,8 @@ $(document).ready(function(){
 
 //user is "finished typing," do something
 
-function search(str){
+function search(str,cardhtml){
+    console.log(cardhtml);
     var data = {};
     if (str.length == 0) {
         return;
@@ -33,7 +38,7 @@ function search(str){
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                cards(this.responseText);
+                cards(this.responseText,cardhtml);
             }
         };
         xmlhttp.open("POST", "./searchsports.php");
@@ -43,23 +48,30 @@ function search(str){
     }
 }
 
-function cards(jsonstring){
+function cards(jsonstring,cardhtml){
     array = JSON.parse(jsonstring);
     console.log(array);
     if (array.length == 0){
         $("#search-result-heading").text("No Results");
+        $("#search-results-cards").fadeOut(100);
     }else{
+        $("#search-results-cards").text("");
+        $("#search-results-cards").append('<div class="row">');
+        counter = 1;
         array.forEach(function(element,index) {
-            $("#search-results-cards").append('<div id="search-result-'+index+'"></div>');
-            $('#search-result-'+index).load('card.html',"",function(){
-                $("#search-result-" +index+" .card-title").text(element[6]);
-                if(index == array.length-1){
-                    console.log("all processed");
-                    $("#search-result-heading").text("Search Results");
-                    $("#search-results-cards").fadeIn(1000);
-                }
-            });
+            $("#search-results-cards").append('<div id="search-result-'+index+'">'+cardhtml+'</div>');
+            $("#search-result-" +index+" .card-title").text(element[6]);
+            $("#search-result-" +index+" .img-fluid").attr("src",element[8]);
+            if (counter == 4){
+                counter = 0;
+                $("#search-results-cards").append('</div><div class="row">');
+            }
+            counter++;
         });
+        $("#search-results-cards").append('</div>');
+        console.log("all processed");
+        $("#search-result-heading").text("Search Results");
+        $("#search-results-cards").fadeIn(1000);
     }   
     
 }

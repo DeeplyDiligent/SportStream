@@ -1,6 +1,12 @@
 <!--To align elements horizontally:margin=auto LOL !!-->
 <!--DONT FORGET TO REDIRECT BACK TO HOMEPAGE IF NO PASSWORD FOUND !!-->
 <!DOCTYPE html>
+<?php 
+session_start();
+if(!isset($_SESSION['username'])){
+    header('Location: ./index.php');
+}
+?>
 <html lang="en">
 
 <head>
