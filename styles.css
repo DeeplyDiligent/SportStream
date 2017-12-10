@@ -26,7 +26,7 @@ footer {
     z-index: 500;
 }
 
-.sportstream-logo {
+.curint-logo {
     height: inherit;
     padding: 10px;
 }
@@ -52,8 +52,14 @@ footer {
     background-blend-mode: darken;     
 }
 
-.container {
+.container{
     padding: 5% 5%;
+}
+.container.carousel{
+    box-shadow: 0 0px 10px 0px gray;
+    margin-top:20px;
+    padding: 0px;
+    height:495px;
 }
 
 .jumbotron.profile {
@@ -125,7 +131,7 @@ footer {
     width: 100px
 }
 
-.work-exp-pics-pos {
+.people-pics-pos {
     padding-left: 7.5px !important;
     padding-top: 5px!important;
     padding-bottom: 15px!important;
@@ -137,7 +143,7 @@ footer {
     font-family: "Flamenco";
     word-wrap: break-word;
 }
-.about-us .black-text, .about-us .mb-0{
+.mb-0{
     font-weight: 300 !important;
 }
 
@@ -151,6 +157,9 @@ footer {
     max-width: 1000px!important;
     overflow: auto;
     margin: auto;
+}
+.contact-showcase h1{
+    margin-top:30px;
 }
 
 .contact-showcase>p {
@@ -221,10 +230,12 @@ a.anchor {
     overflow: hidden;
 }
 
-.about-us-showcase {
+.about-us .about-us-showcase {
     max-width: 1000px;
     overflow: hidden;
     margin: auto;
+}
+.about-us-2.about-us-showcase{
 }
 
 h1 {
@@ -256,4 +267,36 @@ h1 {
 
 .card-footer {
     padding:10px;
+}
+
+.jumbotron{
+    box-shadow: 0 0px 0px 0px gray;
+}
+.jumbotron.about-us-2 {
+    box-shadow: 0 0px 10px 0px gray;
+    overflow: hidden;
+    background-color: lightgrey;
+/*    background-image:url(images/videobackground.jpg);*/
+/*
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
+}
+
+.view.carousel {
+    overflow:hidden;
+    width:10%;
+    display: inline-block;
+}
+
+
+.img-fluid.carousel {
+    object-fit: cover;
+    height:500px;
+}
+
+.contact .people {
+    margin-top:50px;
 }

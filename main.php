@@ -25,7 +25,6 @@ if(!isset($_SESSION['username'])){
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="stylesmain.css">
     <script src="./js/main.js"></script>
@@ -62,7 +61,9 @@ if(!isset($_SESSION['username'])){
                 <input type="text" id="form2" class="form-control mr-sm-2">
                 <label for="form2">Search</label>
             </div>
-                
+            <div class="search-button">
+                <a href="#" class="btn btn-outline-success waves-effect">Search&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            </div>   
         </div>
     </nav>
     <div class="main">
@@ -76,7 +77,7 @@ if(!isset($_SESSION['username'])){
             <h1 style="display:inline-block">Recommended For You</h1><br><br>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card ">
                         <!--Card image-->
                         <div class="view overlay hm-white-slight">
                             <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">

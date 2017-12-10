@@ -10,7 +10,7 @@ html, body
 }
 
 .navbar {
-    position: fixed;
+    position: absolute;
     margin-bottom: 0;
     border-radius: 0;
     top: 0;
@@ -323,4 +323,13 @@ a.anchor {
     margin:1rem;
     margin-left:auto; 
     margin-right:auto;
+}
+
+
+
+.search-button {
+    position:absolute;
+    margin-left:50%;
+    transform: translateX(-50%)
+    
 }
