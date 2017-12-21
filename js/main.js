@@ -4,7 +4,6 @@ var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
 $(document).ready(function(){
     $(document).click(function () {
-        console.log("page clicked");
         if($('#form2').is(":focus") && isMobile.matches){
             console.log("form in focus")
             $(window).scrollTop(0);

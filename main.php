@@ -24,11 +24,15 @@ if(!isset($_SESSION['username'])){
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="stylesmain.css">
     <script src="./js/main.js"></script>
+    <script src="./js/recommended.js"></script>
     <script src="./js/search.js"></script>
+    <script src="./js/date.format.js"></script>
+    <script type="text/javascript">
+        var username = <?php echo json_encode($_SESSION['username']); ?>;
+    </script>
 </head>
 
 <body>
@@ -73,205 +77,12 @@ if(!isset($_SESSION['username'])){
             <div id="search-results-cards">
             </div>
         </div>
-        <div class="container">
-            <h1 style="display:inline-block">Recommended For You</h1><br><br>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card ">
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
-                        </div>
-
-                    </div>  
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
-                        </div>
-
-                    </div>  
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
-                        </div>
-
-                    </div>  
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Button</a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+        <div class="container recommended-section">
+            <h1>Recommended For You</h1><br><br>
+            <div class="recommended-cards" id="recommended-cards"></div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js"></script> 
     <script>new WOW().init();</script>
 </body>
 

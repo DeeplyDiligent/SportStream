@@ -4,9 +4,24 @@ jQuery.fn.exists = function(){return this.length>0;}
 var typingTimer;                //timer identifier
 var doneTypingInterval = 500;  //time in ms (5 seconds)
 
+var parseQueryString = function(url) {
+  var urlParams = {};
+  url.replace(
+    new RegExp("([^?=&]+)(=([^&]*))?", "g"),
+    function($0, $1, $2, $3) {
+      urlParams[$1] = $3;
+    }
+  );
+  
+  return urlParams;
+}
+
 //on keyup, start the countdown
 $(document).ready(function(){
+    var query = parseQueryString(location.search);  
     $('#form2').keyup(function(){
+        
+        window.history.pushState(null, null, '/main.php?q='+ encodeURIComponent(($('#form2').val())).replace(/%20+/g, "+"));
         console.log("timer cleared");
         clearTimeout(typingTimer);
         if ($('#form2').val()) {
@@ -24,6 +39,12 @@ $(document).ready(function(){
             $(".search-results").slideUp();
         }
     });
+    if (typeof query['q'] !== 'undefined'){
+        console.log(query['q'])
+        query['q'] = decodeURIComponent(query['q'].replace(/\+/g, "%20"))
+        $('#form2').val(query['q']);
+        $('#form2').keyup();
+    }
 })
 
 
@@ -43,7 +64,7 @@ function search(str,cardhtml){
         };
         xmlhttp.open("POST", "./searchsports.php");
 		xmlhttp.setRequestHeader("Content-type", "application/json");
-		data['yousent'] =  str;
+		data['yousent'] =  str.replace(/ +/g,"%");
         xmlhttp.send(JSON.stringify(data));
     }
 }

@@ -1,3 +1,8 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
 .jumbotron {
     border-radius: 0px;
     overflow:auto;
@@ -300,3 +305,75 @@ h1 {
 .contact .people {
     margin-top:50px;
 }
+
+/*landing page*/
+.bg.landing {
+    /* The image used */
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),url("./images/landingpage/laptop.jpg");
+    background-blend-mode: darken;  
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:5%;
+    transition: linear all 1s;
+  /* if you don't use delay , background will disapear and transition will start from a white background - you have to set the transition-delay the same as transition time OR more , so there won't be any problems */
+  -webkit-transition-delay: 1s;/* Safari */
+  transition-delay: 1s;
+}
+
+.bg .topleft {
+    color: white;
+    font-size:40px;    
+}
+img.topleft{
+    max-width: 480px;
+    width:100%;
+    display: inline-block;
+}
+
+
+
+.landing .topleft.text {
+    text-shadow: 2px 2px 5px black;
+    font-size: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-right: 5%;
+    font-weight:bold;
+}
+.landing .topleft.text.sm {
+    font-family:flamenco;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight:normal;
+}
+
+@media only screen and (max-device-width: 480px){
+    .landing .to-bottom-mobile{
+        position: absolute;
+        bottom: 5%;
+    }
+    .landing .topleft.text {
+        font-size: 30px
+    }
+    .landing .topleft.text.sm {
+        font-family: "Flamenco";
+        font-size: 25px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .bg.landing {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),url("./images/landingpage/laptop.jpg");
+
+    }
+}
+
+
